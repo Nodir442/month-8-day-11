@@ -10,6 +10,8 @@ export const getBanners = async (): Promise<BannerType[]> => {
     return data;
   } catch (error) {
     const message = (error as Error).message;
+    console.log(message);
+    
     throw new Error(message);
   }
 };
